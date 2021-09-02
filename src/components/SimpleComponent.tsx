@@ -22,7 +22,9 @@ const SimpleComponent = () => {
   return (
     <Fragment>
       <WelcomeMessage name={user.name} />
-      <button onClick={handleClick}>Click to show Name </button>
+      <button className="btn btn-primary" onClick={handleClick}>
+        Click to show Name{" "}
+      </button>
     </Fragment>
   );
 };

@@ -24,9 +24,18 @@ const UseReducerComponent = () => {
   return (
     <div>
       <label>{state}</label>
-      <button onClick={() => dispatch("increment")}>Increment</button>
-      <button onClick={() => dispatch("decrement")}>Decrement</button>
-      <button onClick={() => dispatch("reset")}>Reset</button>
+      <button className="btn btn-primary" onClick={() => dispatch("increment")}>
+        Increment
+      </button>
+      <button
+        className="btn btn-secondary"
+        onClick={() => dispatch("decrement")}
+      >
+        Decrement
+      </button>
+      <button className="btn btn-danger" onClick={() => dispatch("reset")}>
+        Reset
+      </button>
     </div>
   );
 };
